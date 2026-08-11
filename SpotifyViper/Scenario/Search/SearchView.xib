@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="SpotifyViper" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="scr-00-050" id="scr-00-090"/>
+                <outlet property="messageLabel" destination="scr-00-040" id="scr-00-091"/>
+                <outlet property="searchBar" destination="scr-00-020" id="scr-00-092"/>
+                <outlet property="titleLabel" destination="scr-00-010" id="scr-00-094"/>
+                <outlet property="tracksTableView" destination="scr-00-030" id="T2T-5N-jQf"/>
+                <outlet property="view" destination="scr-00-001" id="scr-00-095"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="scr-00-001">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scr-00-010">
+                    <rect key="frame" x="16.000000000000007" y="126" width="111.66666666666669" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Songs, artists, albums" translatesAutoresizingMaskIntoConstraints="NO" id="scr-00-020">
+                    <rect key="frame" x="8" y="171" width="377" height="64"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="0.0" sectionFooterHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="scr-00-030">
+                    <rect key="frame" x="0.0" y="239" width="393" height="545"/>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Spotify for a song, artist or album." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scr-00-040">
+                    <rect key="frame" x="32" y="502.66666666666669" width="329" height="18.000000000000057"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="scr-00-050">
+                    <rect key="frame" x="186.66666666666666" y="501.66666666666669" width="20" height="20.000000000000057"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="scr-00-002"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="scr-00-010" firstAttribute="top" secondItem="scr-00-002" secondAttribute="top" constant="8" id="scr-00-060"/>
+                <constraint firstItem="scr-00-010" firstAttribute="leading" secondItem="scr-00-002" secondAttribute="leading" constant="16" id="scr-00-061"/>
+                <constraint firstItem="scr-00-020" firstAttribute="top" secondItem="scr-00-010" secondAttribute="bottom" constant="4" id="scr-00-062"/>
+                <constraint firstItem="scr-00-020" firstAttribute="leading" secondItem="scr-00-002" secondAttribute="leading" constant="8" id="scr-00-063"/>
+                <constraint firstItem="scr-00-002" firstAttribute="trailing" secondItem="scr-00-020" secondAttribute="trailing" constant="8" id="scr-00-064"/>
+                <constraint firstItem="scr-00-030" firstAttribute="top" secondItem="scr-00-020" secondAttribute="bottom" constant="4" id="scr-00-065"/>
+                <constraint firstItem="scr-00-030" firstAttribute="leading" secondItem="scr-00-001" secondAttribute="leading" id="scr-00-066"/>
+                <constraint firstAttribute="trailing" secondItem="scr-00-030" secondAttribute="trailing" id="scr-00-067"/>
+                <constraint firstItem="scr-00-002" firstAttribute="bottom" secondItem="scr-00-030" secondAttribute="bottom" id="scr-00-068"/>
+                <constraint firstItem="scr-00-040" firstAttribute="centerY" secondItem="scr-00-030" secondAttribute="centerY" id="scr-00-070"/>
+                <constraint firstItem="scr-00-040" firstAttribute="leading" secondItem="scr-00-002" secondAttribute="leading" constant="32" id="scr-00-071"/>
+                <constraint firstItem="scr-00-002" firstAttribute="trailing" secondItem="scr-00-040" secondAttribute="trailing" constant="32" id="scr-00-072"/>
+                <constraint firstItem="scr-00-050" firstAttribute="centerX" secondItem="scr-00-030" secondAttribute="centerX" id="scr-00-073"/>
+                <constraint firstItem="scr-00-050" firstAttribute="centerY" secondItem="scr-00-030" secondAttribute="centerY" id="scr-00-074"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="129"/>
+        </view>
+    </objects>
+</document>
